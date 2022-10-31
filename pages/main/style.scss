@@ -1,0 +1,235 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    height: 80px;
+    background: #000000;
+    backdrop-filter: blur(2px);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    //line-height: 22.4px;
+    line-height: 140%;
+}
+
+.header-container {
+    width: 1160px;
+    display: flex;
+    margin: 0 auto;
+    gap: 63px;
+
+    h1 {
+        display: none;
+    }
+
+    .logo {
+        margin-top: 14px;
+
+        :hover{
+            cursor: pointer;
+        }
+    }
+
+    .nav-bar {
+        
+
+        ul{
+            list-style: none;
+            display: flex;
+            gap: 58px;
+            margin-top: 29px;
+
+            li a{
+                text-decoration: none;
+                color: white;
+
+            }
+            li {
+                :hover{
+                    cursor: pointer;
+                    color: #E47209;
+                }
+
+                :active{
+                    color: #F9804B;
+                }
+            }
+           
+        }
+    }
+
+    .designed-by-btn{
+        margin-top: 29px;
+        margin-left: 150px;
+
+        a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        
+        :hover{
+            cursor: pointer;
+            color: #E47209;
+        }
+        :active{
+            color: #F9804B;
+        }
+
+    }
+}
+
+main {
+    width: 100%;
+
+}   
+.watch-online {
+    width: 100vw;
+    height: 780px;
+    background-image: url("../../assets/images/Giant-Panda.png");
+    position: absolute;
+    top: 10px;
+    z-index: -1;
+
+    .watch-online-container {
+        width: 1160px;
+       // height: 600px;
+       // background-image: url("../../assets/images/orange-circle.png");
+        
+
+    .watch-online-circle{
+        width: 465px;
+        height: 465px;
+        background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+        border-radius: 50%;
+        position: absolute;
+    top: 92px;
+    left: calc(50% - 465px/2 + 239.5px);
+    }
+    .watch-online-text {
+        position: absolute;
+        width: 500.31px;
+        height: 400px;
+        left: calc(50% - 500.31px/2 + 330.15px);
+        top: 166px;
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 106.496px;
+        line-height: 75%;
+        /* or 80px */
+        
+        text-align: center;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+            p{
+                font-family: 'Roboto', sans-serif;
+                font-weight: 700;
+                font-size: 106.5px;
+                line-height: 75%;
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+            span {
+                color: #FFEE2E;
+                text-transform: uppercase;
+            }
+    
+            button {
+                font-family: 'Roboto', sans-serif;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 140%;
+                text-align: center;
+                text-transform: uppercase;
+                color: #ffffff;
+    
+                width: 298px;
+                height: 54px;
+    
+                background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+                border-radius: 25px;
+                left: calc(50% - 298px/2 + 332px);
+top: 626px;
+outline: none;
+border: none;
+
+   
+            }
+
+            :hover {
+                cursor: pointer;
+                background: #E47209;
+            }
+            
+            :active {
+                background: #4B9200;
+            } 
+            
+        }
+        
+    }
+
+    
+}
+
+.choose-fav {
+    position: relative;
+    top: 840px;
+    background-color: #FFFFFF;
+    width: 100vw;
+
+    .choose-fav-container {
+        width: 1160px;
+        height: fit-content;
+
+        .backstage {
+            width: 100%;
+        }
+    }
+
+    .bg-flower-1 {
+        background-image: url("../../assets/images/flower_foto1.png");
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        position: absolute;
+width: 293px;
+height: 605px;
+left: 1400px;
+top: 792px;
+background-repeat: no-repeat;
+    }
+    .bg-flower-2 {
+        background-image: url("../../assets/images/palm_foto.png");
+        position: absolute;
+width: 880px;
+height: 460px;
+left: -588px;
+top: 2149px;
+background-repeat: no-repeat;
+    }
+    .bg-flower-3 {
+        background-image: url("../../assets/images/strelitzia.png");
+        transform: matrix(-1, 0, 0, 1, 0, 0);
+        position: absolute;
+width: 368px;
+height: 275px;
+right: -368px;
+top: 2334px;
+background-repeat: no-repeat;
+    }
+}
+
+
+
+
+
