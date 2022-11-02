@@ -477,9 +477,10 @@ button.watch :disabled {
   margin: 0 auto;
 }
 
-.feed-friend .pick-feed-description u {
+.feed-friend .pick-feed-description a {
   -webkit-text-decoration-color: #fe9013;
           text-decoration-color: #fe9013;
+  color: #333b41;
 }
 
 .feed-friend .pick-feed-description h2 {
