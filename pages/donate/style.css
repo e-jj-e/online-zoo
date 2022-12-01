@@ -23,15 +23,25 @@ header {
 }
 
 .header-container {
-  width: 1160px;
+  width: 72.5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  gap: 63px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .header-container h1 {
+  display: none;
+}
+
+.header-container .header-tablet-logo {
+  display: none;
+}
+
+.header-container .burger-menu {
   display: none;
 }
 
@@ -74,7 +84,6 @@ header {
 
 .header-container .designed-by-btn {
   margin-top: 29px;
-  margin-left: 150px;
 }
 
 .header-container .designed-by-btn a {
@@ -99,6 +108,7 @@ main {
   width: 100vw;
   height: 390px;
   background-image: url("../../assets/images/panda_bg.png");
+  background-size: cover;
 }
 
 .donation {
@@ -143,6 +153,7 @@ main {
   font-weight: 400;
   font-size: 36px;
   line-height: 130%;
+  text-transform: uppercase;
 }
 
 .donation .donation-container .help p {
@@ -186,7 +197,7 @@ main {
 }
 
 .donation .donation-container .donation-info .pick-feed .pick-feed-container {
-  width: 976px;
+  width: 96.16%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -362,18 +373,20 @@ main {
 }
 
 .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range {
-  width: 976px;
+  width: 100%;
   height: 27px;
   border-radius: 2px;
   background: #404950;
 }
 
 .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line {
-  width: 915px;
+  width: 86%;
   height: 2px;
   background: #72828E;
   margin: 0 auto;
   margin-top: 13px;
+  position: absolute;
+  left: 7%;
 }
 
 .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line ul {
@@ -385,10 +398,12 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  gap: 120px;
   margin: 0 auto;
   margin-top: -4px;
-  position: absolute;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
 }
 
 .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line ul li {
@@ -430,6 +445,20 @@ main {
   -webkit-box-shadow: 0 0 25px #f5e9db;
           box-shadow: 0 0 25px #f5e9db;
   border-radius: 50%;
+}
+
+.donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line ul :hover li.orange-circle::marker {
+  content: "";
+  width: 45px;
+  height: 45px;
+  opacity: 0;
+  border-radius: 50%;
+  border: 2px solid #FE9013;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 46%;
+  left: 28.8%;
 }
 
 .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range-numbers ul {
@@ -563,17 +592,58 @@ footer {
 }
 
 footer .footer-container {
-  width: 1160px;
+  width: 72.5%;
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+footer .footer-container .footer-mobile-header {
+  display: none;
+}
+
+footer .footer-container .part1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+footer .footer-container .part2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 54px;
+}
+
+footer .footer-container .part3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 770px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  margin-top: 380px;
+  margin-left: 270px;
 }
 
 footer .footer-container .logo :hover {
@@ -664,8 +734,6 @@ footer .footer-container .social-media-links {
   font-size: 16px;
   line-height: 140%;
   color: #FFFFFF;
-  margin-top: 284px;
-  position: absolute;
 }
 
 footer .footer-container .social-media-links ul {
@@ -726,8 +794,6 @@ footer .footer-container .footer-menu {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  margin-top: 230px;
-  margin-left: 30px;
   color: white;
 }
 
@@ -765,8 +831,6 @@ footer .footer-container .authorship-info {
   font-weight: 100;
   font-size: 16px;
   line-height: 130%;
-  margin-top: 220px;
-  margin-left: 170px;
 }
 
 footer .footer-container .authorship-info a {
@@ -781,6 +845,370 @@ footer .footer-container .authorship-info :hover {
 
 footer .footer-container .logo {
   margin-top: 41px;
-  margin-right: 708px;
+}
+
+@media (max-width: 1000px) {
+  body {
+    max-width: 1000px;
+  }
+  body .header-container {
+    width: 94%;
+  }
+  body .header-container .burger-menu {
+    display: none;
+  }
+  body .header-container .header-tablet-logo {
+    display: none;
+  }
+  body .panda-background {
+    background-position-x: 30%;
+  }
+  body .donation {
+    width: 100%;
+    height: 1373px;
+  }
+  body .donation .donation-container {
+    width: 94%;
+  }
+  body .donation .donation-container {
+    width: 94%;
+  }
+  body .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line {
+    width: 80%;
+    left: 10%;
+  }
+  body .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line ul li:first-child {
+    display: none;
+  }
+  body .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line ul li.orange-circle::before {
+    left: 17.1%;
+  }
+  body .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line ul li.orange-circle::after {
+    left: 17.1%;
+  }
+  body .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range-numbers ul li:first-child {
+    display: none;
+  }
+  body footer .footer-container {
+    width: 94%;
+  }
+  body footer .footer-container .footer-mobile-header {
+    display: none;
+  }
+  body footer .footer-container .part3 {
+    margin-left: 283px;
+    width: 650px;
+  }
+  body footer .footer-container .footer-menu ul {
+    gap: 48px;
+  }
+}
+
+@media (max-width: 640px) {
+  body {
+    max-width: 640px;
+  }
+  body header {
+    height: 34px;
+  }
+  body header .header-container .nav-bar {
+    display: none;
+  }
+  body header .header-container .designed-by-btn {
+    display: none;
+  }
+  body header .header-container .logo {
+    display: none;
+  }
+  body header .header-container .header-tablet-logo {
+    display: block;
+    width: 47px;
+    height: 29px;
+    color: #fff;
+    font-size: 12px;
+    line-height: 120%;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 2px;
+  }
+  body header .header-container .header-tablet-logo a {
+    text-decoration: none;
+    color: #fff;
+  }
+  body header .header-container .header-tablet-logo img {
+    position: relative;
+    top: -17px;
+    left: -14px;
+    width: 4.53px;
+    height: 13.54px;
+  }
+  body header .header-container .burger-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 18px;
+    height: 10px;
+    margin-top: 11px;
+  }
+  body header .header-container .burger-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2px;
+    list-style: none;
+  }
+  body header .header-container .burger-menu ul li {
+    width: 18px;
+    height: 2px;
+    border-radius: 2px;
+    color: #fff;
+    background-color: #fff;
+  }
+  body main .panda-background {
+    background-position-x: 35%;
+  }
+  body main .donation {
+    height: 1373px;
+  }
+  body main .donation .donation-container .help h3 {
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.05rem;
+  }
+  body main .donation .donation-container .donation-info {
+    gap: 30px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container {
+    gap: 97px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .amount-range {
+    width: 600px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line {
+    width: 88.33%;
+    left: 5%;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line ul li:nth-child(2) {
+    display: none;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line ul li:nth-child(3) {
+    display: none;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range-numbers ul li:nth-child(2) {
+    display: none;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range-numbers ul li:nth-child(3) {
+    display: none;
+  }
+  body footer {
+    height: 282px;
+  }
+  body footer .footer-container .footer-mobile-header {
+    display: none;
+  }
+  body footer .footer-container .subscribe-btn {
+    display: none;
+  }
+  body footer .footer-container .part2 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body footer .footer-container .part3 {
+    margin-left: 0;
+    margin-top: 220px;
+    width: 93.75%;
+  }
+  body footer .footer-container .footer-menu {
+    width: 297px;
+  }
+  body footer .footer-container .footer-menu ul {
+    gap: 36px;
+  }
+  body footer .footer-container .logo {
+    margin-top: 13px;
+  }
+  body footer .footer-container .social-media-links {
+    position: absolute;
+    right: 2%;
+    margin-top: -55px;
+  }
+  body footer .footer-container .social-media-links ul li a span {
+    display: none;
+  }
+}
+
+@media (max-width: 320px) {
+  body {
+    max-width: 320px;
+  }
+  body header .header-container .logo {
+    display: none;
+  }
+  body main .panda-background {
+    width: 100%;
+    height: 187px;
+  }
+  body main .donation {
+    height: 1165px;
+  }
+  body main .donation .donation-container .donation-info .donation-info-heading h3 {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  body main .donation .donation-container .donation-info .pick-feed {
+    height: 591px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container {
+    gap: 16px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .pick-feed-text h2 {
+    font-size: 24px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .pick-feed-text p {
+    font-size: 15px;
+    line-height: 140%;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .panda-diet .panda {
+    gap: 0;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .panda-diet .panda .panda-img {
+    margin-left: 36px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .panda-diet .panda .panda-img img {
+    width: 151px;
+    height: 111px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .panda-diet .panda .four {
+    gap: 6px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .panda-diet .panda .four h2 {
+    font-size: 40.6015px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .panda-diet .panda .four p {
+    font-size: 9.02255px;
+    width: 89px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form {
+    gap: 25px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .amount-range {
+    width: 300px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range {
+    height: 13.5px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line {
+    margin-top: 6px;
+    height: 1px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line ul {
+    margin-top: -2px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line ul li {
+    width: 5px;
+    height: 5px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line ul li.orange-circle::after {
+    width: 20px;
+    height: 20px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range .grey-line ul li.orange-circle::before {
+    width: 11px;
+    height: 11px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .range-numbers ul {
+    font-size: 13px;
+    gap: 36px;
+    line-height: 140%;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .another-amount .text-field input[type=number] {
+    width: 180px;
+    height: 42px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .another-amount .text-field img {
+    margin-top: 10px;
+    margin-left: 159px;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .amount form .another-amount .radio-btn {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  body main .donation .donation-container .donation-info .pick-feed .pick-feed-container .share-text {
+    width: 301px;
+    margin-top: -20px;
+  }
+  body footer .footer-container .footer-mobile-header {
+    display: block;
+    font-weight: 400;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: #fff;
+    font-size: 19px;
+    line-height: 120%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  body footer .footer-container .footer-mobile-header a {
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+  body footer .footer-container .footer-mobile-header img {
+    position: relative;
+    top: -25px;
+    left: 17px;
+  }
+  body footer .footer-container .part1 {
+    display: none;
+  }
+  body footer .footer-container .part2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 30px;
+  }
+  body footer .footer-container .part3 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    gap: 30px;
+    margin-top: 180px;
+    gap: 30px;
+  }
+  body footer .footer-container .social-media-links {
+    position: relative;
+    margin-top: 0;
+    right: 0;
+    margin: 0 auto;
+  }
+  body footer .footer-container .social-media-links ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 30px;
+  }
+  body footer .footer-container .donate-btn {
+    margin: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
