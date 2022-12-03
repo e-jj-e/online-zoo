@@ -1354,7 +1354,8 @@ footer .footer-container .logo {
   body header {
     height: 34px;
     position: fixed;
-    z-index: 1;
+    z-index: 10000;
+    width: 100vw;
   }
   body header .header-container .nav-bar {
     display: none;
