@@ -1425,9 +1425,10 @@ footer .footer-container .logo {
     top: 43px;
   }
   body .watch-online .watch-online-container .watch-online-text {
-    width: 100%;
     left: calc(50% - 255.64px/2 + 176.76px);
     top: 82.04px;
+    width: 255px;
+    height: 204px;
   }
   body .watch-online .watch-online-container .watch-online-text p {
     font-size: 54.2894px;
@@ -1689,6 +1690,8 @@ footer .footer-container .logo {
   body .watch-online .watch-online-container .watch-online-text {
     top: 41px;
     left: calc(50% - 128.13px/2 + 85.67px);
+    width: 128px;
+    height: 102px;
   }
   body .watch-online .watch-online-container .watch-online-text p {
     font-size: 28px;
@@ -1696,7 +1699,7 @@ footer .footer-container .logo {
   }
   body .watch-online .watch-online-container .watch-online-text button.watch {
     left: -170px;
-    top: 165px;
+    top: 155px;
   }
   body .choose-fav {
     top: 260px;
